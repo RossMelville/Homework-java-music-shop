@@ -8,7 +8,7 @@ public class GuitarTest {
 
   @Before 
   public void before() {
-    guitar = new Guitar("Maple", "Black", "String", 6);
+    guitar = new Guitar("Gibson", "Maple", "Black", "String", 35000, 65000, 6);
   }
 
   @Test
@@ -20,6 +20,42 @@ public class GuitarTest {
   public void canPlay() {
     assertEquals("Strum strum!", guitar.play());
   }
+
+  @Test
+  public void canGetMake() {
+    assertEquals("Gibson", guitar.getMake());
+  }
+
+  @Test
+  public void canGetMaterial() {
+    assertEquals("Maple", guitar.getMaterial());
+  }
+
+  @Test
+  public void canGetColour() {
+    assertEquals("Black", guitar.getColour());
+  }
+
+  @Test
+  public void canGetType() {
+    assertEquals("String", guitar.getType());
+  }
+
+  @Test
+  public void canGetBuyPrice() {
+    assertEquals(350.00, guitar.getBuyPrice(), 0.01);
+  }
+
+  @Test
+  public void canGetSellPrice() {
+    assertEquals(650.00, guitar.getSellPrice(), 0.01);
+  }
+
+  @Test 
+  public void canCalculateMarkup() {
+    assertEquals(300.00, guitar.calculateMarkup(), 0.01);
+  }
+
 
 
 }

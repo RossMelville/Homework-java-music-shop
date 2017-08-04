@@ -1,12 +1,12 @@
 package music_shop_management;
 import behaviours.*;
 
-public class Guitar extends Instrument implements Playable {
+public class Guitar extends Instrument implements Playable, Sellable {
 
   int strings;
 
-  public Guitar(String material, String colour, String type, int strings) {
-    super(material, colour, type);
+  public Guitar(String make, String material, String colour, String type, int buyPrice, int sellPrice, int strings) {
+    super(make, material, colour, type, buyPrice, sellPrice);
     this.strings = strings;
   }
 
