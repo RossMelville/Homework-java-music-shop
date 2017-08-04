@@ -8,7 +8,7 @@ public class TrumpetTest {
 
   @Before
   public void before() {
-    trumpet = new Trumpet(3);
+    trumpet = new Trumpet("Brass", "Gold", "Brass", 3);
   }
 
   @Test 

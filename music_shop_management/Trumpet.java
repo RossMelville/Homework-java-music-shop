@@ -5,7 +5,7 @@ public class Trumpet implements Playable {
 
   int valves;
 
-  public Trumpet(int valves) {
+  public Trumpet(String material, String colour, String type, int valves) {
     this.valves = valves;
   }
 
