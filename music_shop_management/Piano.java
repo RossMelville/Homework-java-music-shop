@@ -1,11 +1,12 @@
 package music_shop_management;
 import behaviours.*;
 
-public class Piano implements Playable {
+public class Piano extends Instrument implements Playable {
 
   int keys;
 
-  public Piano(int keys) {
+  public Piano(String material, String colour, String type, int keys) {
+    super(material, colour, type);
     this.keys = keys;
   }
 
