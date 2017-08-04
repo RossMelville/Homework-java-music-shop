@@ -12,10 +12,14 @@ public class GuitarTest {
   }
 
   @Test
-  public void hasStrings(){
+  public void hasStrings() {
     assertEquals(6, guitar.getStrings());
   }
 
+  @Test
+  public void canPlay() {
+    assertEquals("Strum strum!", guitar.play());
+  }
 
 
 }
