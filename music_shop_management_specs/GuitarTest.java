@@ -1,0 +1,21 @@
+import static org.junit.Assert.*;
+import org.junit.*;
+import music_shop_management.*;
+
+public class GuitarTest {
+
+  Guitar guitar;
+
+  @Before 
+  public void before() {
+    guitar = new Guitar(6);
+  }
+
+  @Test
+  public void hasStrings(){
+    assertEquals(6, guitar.getStrings());
+  }
+
+
+
+}
