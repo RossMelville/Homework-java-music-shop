@@ -11,6 +11,14 @@ public class PianoTest {
     piano = new Piano(88);
   }
 
-  
+  @Test
+  public void hasKeys() {
+    assertEquals(88, piano.getKeys());
+  }
+
+  @Test 
+  public void canPlay() {
+    assertEquals("Plink plonk!", piano.play());
+  }
 
 }

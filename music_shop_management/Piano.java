@@ -9,6 +9,13 @@ public class Piano implements Playable {
     this.keys = keys;
   }
 
+  public int getKeys() {
+    return this.keys;
+  }
+
+  public String play() {
+    return "Plink plonk!";
+  }
 
 
 }
