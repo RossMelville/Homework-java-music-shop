@@ -21,6 +21,41 @@ public class TrumpetTest {
     assertEquals("Toot toot!", trumpet.play());
   }
 
+  @Test
+  public void canGetMake() {
+    assertEquals("Allora", trumpet.getMake());
+  }
+
+  @Test
+  public void canGetMaterial() {
+    assertEquals("Brass", trumpet.getMaterial());
+  }
+
+  @Test
+  public void canGetColour() {
+    assertEquals("Gold", trumpet.getColour());
+  }
+
+  @Test
+  public void canGetType() {
+    assertEquals("Brass", trumpet.getType());
+  }
+
+  @Test
+  public void canGetBuyPrice() {
+    assertEquals(230.00, trumpet.getBuyPrice(), 0.01);
+  }
+
+  @Test
+  public void canGetSellPrice() {
+    assertEquals(440.00, trumpet.getSellPrice(), 0.01);
+  }
+
+  @Test 
+  public void canCalculateMarkup() {
+    assertEquals(210.00, trumpet.calculateMarkup(), 0.01);
+  }
+
 
 
 }
