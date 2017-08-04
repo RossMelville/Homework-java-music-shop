@@ -21,4 +21,41 @@ public class PianoTest {
     assertEquals("Plink plonk!", piano.play());
   }
 
+  @Test
+  public void canGetMake() {
+    assertEquals("Steinway and Sons", piano.getMake());
+  }
+
+  @Test
+  public void canGetMaterial() {
+    assertEquals("Mahogany", piano.getMaterial());
+  }
+
+  @Test
+  public void canGetColour() {
+    assertEquals("Black", piano.getColour());
+  }
+
+  @Test
+  public void canGetType() {
+    assertEquals("Keyboard", piano.getType());
+  }
+
+  @Test
+  public void canGetBuyPrice() {
+    assertEquals(900.00, piano.getBuyPrice(), 0.01);
+  }
+
+  @Test
+  public void canGetSellPrice() {
+    assertEquals(1500.00, piano.getSellPrice(), 0.01);
+  }
+
+  @Test 
+  public void canCalculateMarkup() {
+    assertEquals(600.00, piano.calculateMarkup(), 0.01);
+  }
+
+
+
 }
