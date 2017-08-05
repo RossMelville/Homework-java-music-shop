@@ -21,6 +21,26 @@ public class GuitarStrings implements Sellable {
     return this.sellPrice - this.buyPrice;
   }
 
+  public String getMake() {
+    return this.make;
+  }
+
+  public int getNumberOfStrings() {
+    return this.numberOfStrings;
+  }
+
+  public String getType() {
+    return this.type;
+  }
+
+  public double getBuyPrice() {
+    return this.buyPrice;
+  }
+
+  public double getSellPrice() {
+    return this.sellPrice;
+  }
+
 
 
 }
