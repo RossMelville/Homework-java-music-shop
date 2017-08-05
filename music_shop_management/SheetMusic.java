@@ -47,6 +47,10 @@ public class SheetMusic implements Sellable {
     return this.sellPrice;
   }
 
+  public void setSellPrice(double newSellPrice) {
+    this.sellPrice = newSellPrice;
+  }
+
 
 
 

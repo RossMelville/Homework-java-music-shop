@@ -41,6 +41,10 @@ public class GuitarStrings implements Sellable {
     return this.sellPrice;
   }
 
+  public void setSellPrice(double newSellPrice) {
+    this.sellPrice = newSellPrice;
+  }
+
 
 
 }

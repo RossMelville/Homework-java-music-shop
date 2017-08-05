@@ -38,7 +38,7 @@ public class DrumSticksTest {
 
   @Test
   public void canSetSellPrice() {
-    drumSticks.setSellPrice(7.0);
+    drumSticks.setSellPrice(7);
     assertEquals(7.00, drumSticks.getSellPrice(), 0.01);
   }
 
