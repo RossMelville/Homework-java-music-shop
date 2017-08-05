@@ -19,6 +19,21 @@ public class DrumSticks implements Sellable {
     return this.sellPrice - this.buyPrice;
   }
 
+  public String getMake() {
+    return this.make;
+  }
+
+  public String getMaterial() {
+    return this.material;
+  }
+
+  public double getBuyPrice() {
+    return this.buyPrice;
+  }
+
+  public double getSellPrice() {
+    return this.sellPrice;
+  }
 
 
 }

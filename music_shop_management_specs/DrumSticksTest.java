@@ -33,7 +33,7 @@ public class DrumSticksTest {
 
   @Test
   public void canGetMarkup() {
-    assertEquals(3.50, drumSticks.calculateMarkup());
+    assertEquals(4.50, drumSticks.calculateMarkup(), 0.01);
   }
 
 
