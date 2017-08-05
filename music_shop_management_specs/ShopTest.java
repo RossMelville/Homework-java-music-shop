@@ -34,5 +34,35 @@ public class ShopTest {
     assertEquals(1, shop.stockCount());
   }
 
+  @Test
+  public void canAddPiano() {
+    shop.addStock( piano );
+    assertEquals(1, shop.stockCount());
+  }
+
+  @Test
+  public void canAddTrumpet() {
+    shop.addStock( trumpet );
+    assertEquals(1, shop.stockCount());
+  }
+
+  @Test
+  public void canAddGuitarStrings() {
+    shop.addStock( guitarStrings );
+    assertEquals(1, shop.stockCount());
+  }
+
+  @Test
+  public void canAddDrumSticks() {
+    shop.addStock( drumSticks );
+    assertEquals(1, shop.stockCount());
+  }
+
+  @Test
+  public void canAddSheetMusic() {
+    shop.addStock( sheetMusic );
+    assertEquals(1, shop.stockCount());
+  }
+
 
 }
