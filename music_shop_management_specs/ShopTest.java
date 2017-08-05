@@ -64,5 +64,11 @@ public class ShopTest {
     assertEquals(1, shop.stockCount());
   }
 
+  @Test
+  public void canRemoveGuitar() {
+    shop.addStock( guitar );
+    shop.removeStock( guitar );
+    assertEquals(0, shop.stockCount());
+  }
 
 }

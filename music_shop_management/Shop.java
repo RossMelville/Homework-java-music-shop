@@ -18,6 +18,10 @@ public class Shop {
     this.stock.add( stock );
   }
 
+  public void removeStock( Sellable stock ) {
+    this.stock.remove( stock );
+  }
+
 
 
 }
