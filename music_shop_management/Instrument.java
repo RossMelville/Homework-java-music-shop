@@ -6,10 +6,10 @@ public abstract class Instrument {
   String material;
   String colour;
   String type;
-  int buyPrice;
-  int sellPrice;
+  double buyPrice;
+  double sellPrice;
 
-  public Instrument(String make, String material, String colour, String type, int buyPrice, int sellPrice) {
+  public Instrument(String make, String material, String colour, String type, double buyPrice, double sellPrice) {
     this.make = make;
     this.material = material;
     this.colour = colour;
@@ -35,15 +35,19 @@ public abstract class Instrument {
   }
 
   public double getBuyPrice() {
-    return this.buyPrice/100;
+    return this.buyPrice;
   }
 
   public double getSellPrice() {
-    return this.sellPrice/100;
+    return this.sellPrice;
   }
 
   public double calculateMarkup() {
-    return (this.sellPrice - this.buyPrice) / 100;
+    return this.sellPrice - this.buyPrice;
+  }
+
+  public void setSellPrice(double newSellPrice) {
+    this.sellPrice = newSellPrice;
   }
 
 }

@@ -8,7 +8,7 @@ public class PianoTest {
 
   @Before
   public void before() {
-    piano = new Piano("Steinway and Sons", "Mahogany", "Black", "Keyboard", 90000, 150000, 88);
+    piano = new Piano("Steinway and Sons", "Mahogany", "Black", "Keyboard", 900, 1500, 88);
   }
 
   @Test
@@ -54,6 +54,12 @@ public class PianoTest {
   @Test 
   public void canCalculateMarkup() {
     assertEquals(600.00, piano.calculateMarkup(), 0.01);
+  }
+
+  @Test
+  public void canSetSellPrice() {
+    piano.setSellPrice(1400);
+    assertEquals(1400.00, piano.getSellPrice(), 0.01);
   }
 
 
