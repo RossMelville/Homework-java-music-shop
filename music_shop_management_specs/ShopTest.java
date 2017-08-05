@@ -71,4 +71,39 @@ public class ShopTest {
     assertEquals(0, shop.stockCount());
   }
 
+  @Test
+  public void canRemovePiano() {
+    shop.addStock( piano );
+    shop.removeStock( piano );
+    assertEquals(0, shop.stockCount());
+  }
+
+  @Test
+  public void canRemoveTrumpet() {
+    shop.addStock( trumpet );
+    shop.removeStock( trumpet );
+    assertEquals(0, shop.stockCount());
+  }
+
+  @Test
+  public void canRemoveGuitarStrings() {
+    shop.addStock( guitarStrings );
+    shop.removeStock( guitarStrings );
+    assertEquals(0, shop.stockCount());
+  }
+
+  @Test
+  public void canRemoveDrumSticks() {
+    shop.addStock( drumSticks );
+    shop.removeStock( drumSticks );
+    assertEquals(0, shop.stockCount());
+  }
+
+  @Test
+  public void canRemoveSheetMusic() {
+    shop.addStock( sheetMusic );
+    shop.removeStock( sheetMusic );
+    assertEquals(0, shop.stockCount());
+  }
+
 }
