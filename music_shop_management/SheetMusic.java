@@ -4,13 +4,15 @@ import behaviours.*;
 public class SheetMusic implements Sellable {
 
   String artist;
+  String song;
   String arrangement;
   String genre;
   int buyPrice;
   int sellPrice;
 
-  public SheetMusic(String artist, String arrangement, String genre, int buyPrice, int sellPrice) {
+  public SheetMusic(String artist, String song, String arrangement, String genre, int buyPrice, int sellPrice) {
     this.artist = artist;
+    this.song = song;
     this.arrangement = arrangement;
     this.genre = genre;
     this.buyPrice = sellPrice;
@@ -21,6 +23,9 @@ public class SheetMusic implements Sellable {
     return (this.sellPrice - this.buyPrice) / 100;
   }
 
+  public String getArtist() {
+    return this.artist;
+  }
 
 
 
