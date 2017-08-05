@@ -14,6 +14,10 @@ public class Shop {
     return this.stock.size();
   }
 
+  public void addStock( Sellable stock ) {
+    this.stock.add( stock );
+  }
+
 
 
 }
