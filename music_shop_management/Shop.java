@@ -10,7 +10,9 @@ public class Shop {
     this.stock = new ArrayList<Sellable>();
   }
 
-  
+  public int stockCount() {
+    return this.stock.size();
+  }
 
 
 
