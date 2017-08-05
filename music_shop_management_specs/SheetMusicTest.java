@@ -8,7 +8,7 @@ public class SheetMusicTest {
 
   @Before
   public void before() {
-    sheetMusic = new SheetMusic("Supergrass", "Alright", "Vocal & Guitar", "Rock", 150, 300);
+    sheetMusic = new SheetMusic("Supergrass", "Alright", "Vocal & Guitar", "Rock", 1.50, 3);
   }
 
   @Test

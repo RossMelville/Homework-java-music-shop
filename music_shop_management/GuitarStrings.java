@@ -6,10 +6,10 @@ public class GuitarStrings implements Sellable {
   String make;
   int numberOfStrings;
   String type;
-  int buyPrice;
-  int sellPrice;
+  double buyPrice;
+  double sellPrice;
 
-  public GuitarStrings(String make, int numberOfStrings, String type, int buyPrice, int sellPrice) {
+  public GuitarStrings(String make, int numberOfStrings, String type, double buyPrice, double sellPrice) {
     this.make = make;
     this.numberOfStrings = numberOfStrings;
     this.type = type;
@@ -18,7 +18,7 @@ public class GuitarStrings implements Sellable {
   }
 
   public double calculateMarkup() {
-    return (this.sellPrice - this.buyPrice) / 100;
+    return this.sellPrice - this.buyPrice;
   }
 
 

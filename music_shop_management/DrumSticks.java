@@ -5,10 +5,10 @@ public class DrumSticks implements Sellable {
 
   String make;
   String material;
-  int buyPrice;
-  int sellPrice;
+  double buyPrice;
+  double sellPrice;
 
-  public DrumSticks(String make, String material, int buyPrice, int sellPrice) {
+  public DrumSticks(String make, String material, double buyPrice, double sellPrice) {
     this.make = make;
     this.material = material;
     this.buyPrice = buyPrice;
@@ -16,7 +16,7 @@ public class DrumSticks implements Sellable {
   }
 
   public double calculateMarkup() {
-    return (this.sellPrice - this.buyPrice) / 100;
+    return this.sellPrice - this.buyPrice;
   }
 
 
