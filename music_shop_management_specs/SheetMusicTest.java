@@ -16,6 +16,35 @@ public class SheetMusicTest {
     assertEquals("Supergrass", sheetMusic.getArtist());
   }
 
+  @Test
+  public void canGetSong() {
+    assertEquals("Alright", sheetMusic.getSong());
+  }
+
+  @Test
+  public void canGetArrangement() {
+    assertEquals("Vocal & Guitar", sheetMusic.getArrangement());
+  }
+
+  @Test
+  public void canGetGenre() {
+    assertEquals("Rock", sheetMusic.getGenre());
+  }
+
+  @Test
+  public void canGetBuyPrice() {
+    assertEquals(1.50, sheetMusic.getBuyPrice(), 0.01);
+  }
+
+  @Test
+  public void canGetSellPrice() {
+    assertEquals(3.00, sheetMusic.getSellPrice(), 0.01);
+  }
+
+  @Test
+  public void canGetMarkup() {
+    assertEquals(1.50, sheetMusic.calculateMarkup(), 0.01);
+  }
 
 
 
