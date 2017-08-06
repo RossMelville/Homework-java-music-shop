@@ -5,11 +5,11 @@ public abstract class Instrument {
   String make;
   String material;
   String colour;
-  String type;
+  InstrumentType type;
   double buyPrice;
   double sellPrice;
 
-  public Instrument(String make, String material, String colour, String type, double buyPrice, double sellPrice) {
+  public Instrument(String make, String material, String colour, InstrumentType type, double buyPrice, double sellPrice) {
     this.make = make;
     this.material = material;
     this.colour = colour;
@@ -30,7 +30,7 @@ public abstract class Instrument {
     return this.colour;
   }
 
-  public String getType() {
+  public InstrumentType getType() {
     return this.type;
   }
 

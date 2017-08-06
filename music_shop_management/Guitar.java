@@ -5,7 +5,7 @@ public class Guitar extends Instrument implements Playable, Sellable {
 
   int strings;
 
-  public Guitar(String make, String material, String colour, String type, double buyPrice, double sellPrice, int strings) {
+  public Guitar(String make, String material, String colour, InstrumentType type , double buyPrice, double sellPrice, int strings) {
     super(make, material, colour, type, buyPrice, sellPrice);
     this.strings = strings;
   }

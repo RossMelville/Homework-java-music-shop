@@ -8,7 +8,7 @@ public class PianoTest {
 
   @Before
   public void before() {
-    piano = new Piano("Steinway and Sons", "Mahogany", "Black", "Keyboard", 900, 1500, 88);
+    piano = new Piano("Steinway and Sons", "Mahogany", "Black", InstrumentType.KEYBOARD, 900, 1500, 88);
   }
 
   @Test
@@ -38,7 +38,7 @@ public class PianoTest {
 
   @Test
   public void canGetType() {
-    assertEquals("Keyboard", piano.getType());
+    assertEquals(InstrumentType.KEYBOARD, piano.getType());
   }
 
   @Test
