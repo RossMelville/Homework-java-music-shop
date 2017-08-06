@@ -106,4 +106,31 @@ public class ShopTest {
     assertEquals(0, shop.stockCount());
   }
 
+  @Test
+  public void canGetTotalPotentialProfit() {
+    shop.addStock( piano );
+    shop.addStock( trumpet );
+    shop.addStock( guitar );
+    assertEquals(1100.00, shop.totalPotentialProfit(), 0.01);
+  }
+
+  @Test
+  public void canGetTotalSpentOnStock() {
+    shop.addStock( sheetMusic );
+    shop.addStock( drumSticks );
+    shop.addStock( guitarStrings );
+    assertEquals(8.50, shop.totalSpentOnStock(), 0.01);
+  }
+
+  @Test
+  public void canGetTotalStockValue() {
+    shop.addStock( piano );
+    shop.addStock( trumpet );
+    shop.addStock( guitar );
+    assertEquals(2590.00, shop.totalStockValue(), 0.01);
+  }
+
+
+
+
 }
