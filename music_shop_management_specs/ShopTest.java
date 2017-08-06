@@ -111,7 +111,7 @@ public class ShopTest {
     shop.addStock( piano );
     shop.addStock( trumpet );
     shop.addStock( guitar );
-    assertEquals(1100.00, shop.totalPotentialProfit(), 0.01);
+    assertEquals(1110.00, shop.totalPotentialProfit(), 0.01);
   }
 
   @Test

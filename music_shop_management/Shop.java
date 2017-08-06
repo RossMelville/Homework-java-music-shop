@@ -22,6 +22,30 @@ public class Shop {
     this.stock.remove( stock );
   }
 
+  public double totalPotentialProfit() {
+    double total = 0;
+    for (int s = 0; s < this.stock.size(); s++) {
+      total += this.stock.get(s).calculateMarkup();
+    }
+    return total;
+  }
+
+  public double totalSpentOnStock() {
+    double total = 0;
+    for (int s = 0; s < this.stock.size(); s++) {
+      total += this.stock.get(s).getBuyPrice();
+    }
+    return total;
+  }
+
+  public double totalStockValue() {
+    double total = 0;
+    for (int s = 0; s < this.stock.size(); s++) {
+      total += this.stock.get(s).getSellPrice();
+    }
+    return total;
+  }
+
 
 
 }
